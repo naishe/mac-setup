@@ -1,5 +1,12 @@
 # NEW MAC SETUP 2023
 
+## Keyboard Adjustment
+
+Install [Karabiner Elements](https://karabiner-elements.pqrs.org/)
+
+1. Settings > Simple Modifications. Map `caps lock` to `grave accent and tilde` and vice versa
+2. Settings > Complex Modifications. Import rules. Import `Left control + hjkl to arrow keys Vim` from the internet.
+
 ## Install iTerm and Homebrew
 - [Install iTerm](https://iterm2.com/)
 - [Install Homebrew](https://brew.sh/)
@@ -58,3 +65,6 @@ EOF
 brew install java
 echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
 ```
+## Install Docker
+
+From [Docker website](https://docs.docker.com/desktop/install/mac-install/)

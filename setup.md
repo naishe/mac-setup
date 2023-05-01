@@ -68,3 +68,9 @@ echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
 ## Install Docker
 
 From [Docker website](https://docs.docker.com/desktop/install/mac-install/)
+
+## Utilities
+
+- [Rectangle App: Window Manager](https://rectangleapp.com/)
+- [Quick View Calendar](https://quickviewcalendar.com/)
+

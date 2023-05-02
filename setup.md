@@ -46,6 +46,14 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 nvm install node
 ```
 
+Get PNPM
+```bash
+brew install pnpm
+
+# Add an alias
+echo 'alias p=pnpm' >> ~/.zshrc
+```
+
 ## Install Visual Studio Code
 
 Install the editor from their website. And then add the shortcut to `.zprofile` so that you can open a workspace with `code /path/to/the/workspace`.
@@ -69,12 +77,39 @@ echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
 
 From [Docker website](https://docs.docker.com/desktop/install/mac-install/)
 
+## Install kubectl
+
+```bash
+# Use Homebrew
+brew install kubectl
+
+# Or, get latest from their repo (intel processor)
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/amd64/kubectl"
+
+## Validate
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/amd64/kubectl.sha256"
+
+echo "$(cat kubectl.sha256)  kubectl" | shasum -a 256 --check
+
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+sudo chown root: /usr/local/bin/kubectl
+
+# Check installation
+kubectl version -o yaml
+
+
+# Add an alias
+echo 'alias k=kubectl' >> ~/.zshrc
+```
+
 ## Utilities
 
 - [Rectangle App: Window Manager](https://rectangleapp.com/)
 - [Quick View Calendar](https://quickviewcalendar.com/)
 - [Slack](https://slack.com/intl/en-in/downloads/mac?geocode=en-in)
 - [MongoDB Compass UI](https://www.mongodb.com/try/download/compass)
+- [Balsamiq Wireframe](https://balsamiq.com/wireframes/desktop/)
 
 ## Finder Settings
 

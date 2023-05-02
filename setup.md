@@ -73,4 +73,20 @@ From [Docker website](https://docs.docker.com/desktop/install/mac-install/)
 
 - [Rectangle App: Window Manager](https://rectangleapp.com/)
 - [Quick View Calendar](https://quickviewcalendar.com/)
+- [Slack](https://slack.com/intl/en-in/downloads/mac?geocode=en-in)
+- [MongoDB Compass UI](https://www.mongodb.com/try/download/compass)
 
+## Finder Settings
+
+Right click on Finder's toolbar, click `Customize Toolbar`. Remove `tags`, `spaces`, and add `new folder`.
+
+Go to `View` > `Show Path Bar`.
+
+Go to `Preferences`, or `⌘ + ,`
+- Set new finder window to `Downloads`.
+- In `Sidebar` tab, unselect all but Applications, Desktop, and Downloads. Uncheck `Recent Tags`.
+- In `Advanced` tab, under "When performing a search" set it to `Search the Current Folder`.
+
+## Keyboard shortcuts
+
+- Settings > Keyboard > Shortcuts > Mission Control. Check `Show notification center`, press `⌘ + ⌥ + [SPACE]`

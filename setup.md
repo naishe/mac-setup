@@ -8,12 +8,16 @@ Install [Karabiner Elements](https://karabiner-elements.pqrs.org/)
 2. Settings > Complex Modifications. Import rules. Import `Left control + hjkl to arrow keys Vim` from the internet.
 
 ## Install iTerm and Homebrew
+
 - [Install iTerm](https://iterm2.com/)
 - [Install Homebrew](https://brew.sh/)
+
+> TIP: You can use a profile from [iterm2-profiles](./iterm2-profiles/) folder instead of manually going to configure a profile.
 
 ## Install Fira Code Font
 
 See [Fira Code installation docs](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)
+
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
@@ -33,6 +37,7 @@ See more details on [Github docs](https://docs.github.com/en/authentication/conn
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
+
 Add it to Github and remove keys from older machines from [Github UI](https://github.com/settings/keys).
 
 ### Install NVM and Node.js
@@ -47,6 +52,7 @@ nvm install node
 ```
 
 Get PNPM
+
 ```bash
 brew install pnpm
 
@@ -73,6 +79,7 @@ EOF
 brew install java
 echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
 ```
+
 ## Install Docker
 
 From [Docker website](https://docs.docker.com/desktop/install/mac-install/)
@@ -118,6 +125,7 @@ Right click on Finder's toolbar, click `Customize Toolbar`. Remove `tags`, `spac
 Go to `View` > `Show Path Bar`.
 
 Go to `Preferences`, or `⌘ + ,`
+
 - Set new finder window to `Downloads`.
 - In `Sidebar` tab, unselect all but Applications, Desktop, and Downloads. Uncheck `Recent Tags`.
 - In `Advanced` tab, under "When performing a search" set it to `Search the Current Folder`.

@@ -1,0 +1,49 @@
+# --- Nishant's custom conf ----
+
+# aliases
+alias k=kubectl
+alias p=pnpm
+# aliased end
+
+# Change default syntax highlight to blue for the colorblind fuck that I am!
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=blue,underline
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=blue,underline
+ZSH_HIGHLIGHT_STYLES[arg0]=fg=blue
+
+# Change auto suggest color
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=121'
+
+# NVM conf, it gets automantically added if you install NVM via Homebrew
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# Java paths
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+# K8s config
+export KUBECONFIG=$HOME/.kube/kube-conf-file.yaml
+
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# pnpm
+export PNPM_HOME="/Users/nishant/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Mysql client config
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql-client/include"
+# Mysql end
+
+# Disable autocomplete when something is pasted
+# refer: https://github.com/ohmyzsh/ohmyzsh/issues/5459
+# refer: https://github.com/zsh-users/zsh-autosuggestions/issues/511
+zle_bracketed_paste=()
+# paste hack end

@@ -23,6 +23,11 @@ brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 ```
 
+## VS Code Theme and Paid Font
+
+High contrast colorblind friendly theme: [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl)
+Artistic font: [Dank Mono](https://philpl.gumroad.com/l/dank-mono)
+
 ## Set up iTerm, Zsh, and plugins
 
 Zsh is the default shell for Mac.

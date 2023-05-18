@@ -35,6 +35,16 @@ Zsh is the default shell for Mac.
 - Install iTerm their docs
 - [Configure Terminal with Oh My Zsh!](https://engineeringfordatascience.com/posts/configure_terminal_for_data_science_with_oh_my_zsh/)
 
+```bash
+# enable plugins
+plugins=(
+        git
+        zsh-syntax-highlighting
+        zsh-autosuggestions
+        wd
+)
+```
+
 ## Generate SSH Key
 
 See more details on [Github docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)

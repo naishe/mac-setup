@@ -91,10 +91,16 @@ From [Docker website](https://docs.docker.com/desktop/install/mac-install/)
 
 ## Install kubectl
 
+Using Homebrew
+
 ```bash
 # Use Homebrew
 brew install kubectl
+```
 
+Using curl
+
+```bash
 # Or, get latest from their repo (intel processor)
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/amd64/kubectl"
 
@@ -106,11 +112,16 @@ echo "$(cat kubectl.sha256)  kubectl" | shasum -a 256 --check
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 sudo chown root: /usr/local/bin/kubectl
+```
 
+Check installation
+
+```bash
 # Check installation
 kubectl version -o yaml
+```
 
-
+```bash
 # Add an alias
 echo 'alias k=kubectl' >> ~/.zshrc
 ```
@@ -122,6 +133,11 @@ echo 'alias k=kubectl' >> ~/.zshrc
 - [Slack](https://slack.com/intl/en-in/downloads/mac?geocode=en-in)
 - [MongoDB Compass UI](https://www.mongodb.com/try/download/compass)
 - [Balsamiq Wireframe](https://balsamiq.com/wireframes/desktop/)
+- [Postman](https://www.postman.com/downloads/)
+- [Notion](https://www.notion.so/desktop)
+- [Zoom](https://zoom.us/download)
+- [Chrome](https://www.google.com/chrome/)
+- [Google Drive](https://www.google.com/drive/download/)
 
 ## Finder Settings
 
@@ -138,3 +154,9 @@ Go to `Preferences`, or `⌘ + ,`
 ## Keyboard shortcuts
 
 - Settings > Keyboard > Shortcuts > Mission Control. Check `Show notification center`, press `⌘ + ⌥ + [SPACE]`
+
+## Enable tabs in dialogs
+
+Settings > Keyboard > Shortcuts > Check "Use keyboard navigation to move between controls"
+
+![Enable tabs in dialogs](images/enable-tabs-in-dialogs.png)

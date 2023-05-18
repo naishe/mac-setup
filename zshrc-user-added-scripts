@@ -21,6 +21,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # Java paths
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+For compilers to find openjdk you may need to set:
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"
 
 # K8s config
 export KUBECONFIG=$HOME/.kube/kube-conf-file.yaml

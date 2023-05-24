@@ -170,3 +170,21 @@ Go to `Preferences`, or `⌘ + ,`
 Settings > Keyboard > Shortcuts > Check "Use keyboard navigation to move between controls"
 
 ![Enable tabs in dialogs](images/enable-tabs-in-dialogs.png)
+
+## Helpful Bash functions
+
+### Copy public key to clipboard
+
+```bash
+function pubkey() {
+  cat ~/.ssh/id_ed25519.pub | tr -d "\n" | pbcopy | echo "=> Public key copied to clipboard"
+}
+```
+
+### Get public IP of the machine
+
+```bash
+function ip() {
+  curl -s https://api.ipify.org
+}
+```
